@@ -11,6 +11,9 @@
 		79967BCA2729D2F6004CDEE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79967BC92729D2F6004CDEE1 /* ContentView.swift */; };
 		79967BCC2729D2F7004CDEE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79967BCB2729D2F7004CDEE1 /* Assets.xcassets */; };
 		79967BCF2729D2F7004CDEE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79967BCE2729D2F7004CDEE1 /* Preview Assets.xcassets */; };
+		79967BD62729D507004CDEE1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79967BD52729D507004CDEE1 /* Constants.swift */; };
+		79967BDD2729D887004CDEE1 /* Parisienne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79967BDC2729D887004CDEE1 /* Parisienne-Regular.ttf */; };
+		79967BE02729EE33004CDEE1 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79967BDF2729EE33004CDEE1 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		79967BC92729D2F6004CDEE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		79967BCB2729D2F7004CDEE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79967BCE2729D2F7004CDEE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79967BD52729D507004CDEE1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		79967BDC2729D887004CDEE1 /* Parisienne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Parisienne-Regular.ttf"; path = "../../../../../../../../.Trash/Parisienne/Parisienne-Regular.ttf"; sourceTree = "<group>"; };
+		79967BDE2729DA05004CDEE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		79967BDF2729EE33004CDEE1 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		79967BC62729D2F6004CDEE1 /* personal-card */ = {
 			isa = PBXGroup;
 			children = (
+				79967BDE2729DA05004CDEE1 /* Info.plist */,
 				79967BC72729D2F6004CDEE1 /* personal_cardApp.swift */,
+				79967BDF2729EE33004CDEE1 /* InfoView.swift */,
 				79967BC92729D2F6004CDEE1 /* ContentView.swift */,
+				79967BD72729D81D004CDEE1 /* fonts */,
+				79967BD52729D507004CDEE1 /* Constants.swift */,
 				79967BCB2729D2F7004CDEE1 /* Assets.xcassets */,
 				79967BCD2729D2F7004CDEE1 /* Preview Content */,
 			);
@@ -65,6 +76,14 @@
 				79967BCE2729D2F7004CDEE1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79967BD72729D81D004CDEE1 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				79967BDC2729D887004CDEE1 /* Parisienne-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +146,7 @@
 			files = (
 				79967BCF2729D2F7004CDEE1 /* Preview Assets.xcassets in Resources */,
 				79967BCC2729D2F7004CDEE1 /* Assets.xcassets in Resources */,
+				79967BDD2729D887004CDEE1 /* Parisienne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79967BE02729EE33004CDEE1 /* InfoView.swift in Sources */,
 				79967BCA2729D2F6004CDEE1 /* ContentView.swift in Sources */,
 				79967BC82729D2F6004CDEE1 /* personal_cardApp.swift in Sources */,
+				79967BD62729D507004CDEE1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +294,7 @@
 				DEVELOPMENT_TEAM = QNHX86K7F4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "personal-card/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +325,7 @@
 				DEVELOPMENT_TEAM = QNHX86K7F4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "personal-card/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
